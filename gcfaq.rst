@@ -6,7 +6,7 @@
 
    <br />
 
-.. last Modified: 2024-01-15/18:15-0500 
+.. last Modified: 2024-01-15/18:25-0500 
 .. comment out section-numbering for latexpdf build
 .. section-numbering::
 
@@ -33235,7 +33235,7 @@ And a sample run capture:
 .. command-output:: cobc -xj forking.cob
    :cwd: listings
    :shell:
-   :returncode: 2
+   :returncode: 127
 
 
 .. index:: X91, XE4, XE5, XF4, XF5
@@ -78053,7 +78053,7 @@ That code won't compile, and ``cobc`` will complain:
 
 .. command-output:: cobc -x hello-wrong-order.cob
    :cwd: tutorial
-   :returncode: 1
+   :returncode: 2
 
 Do yourself the favour and just repeat::
 
@@ -78094,7 +78094,7 @@ That code won't compile, and ``cobc`` will complain again:
 
 .. command-output:: cobc -x hello-missing-period.cob
    :cwd: tutorial
-   :returncode: 1
+   :returncode: 2
 
 You need to worry about full stops in COBOL, and later on we'll see how they
 can effect the interpretation of the instructions in the PROCEDURE DIVISION in
@@ -78271,7 +78271,7 @@ the ``tr`` utility; all spaces translated to dots so you can see them.
 .. command-output:: ./simple-data | tr ' ' '.'
    :cwd: tutorial
    :shell:
-   :returncode: 1
+   :returncode: 127
 
 Don't worry, we'll learn an easy way to avoid displaying the trailing spaces
 soon enough.  *For the impatient, there is an intrinsic function, called
@@ -78443,7 +78443,7 @@ format.
 
 .. command-output:: cobc -x -j just-if-free.cob
    :cwd: tutorial
-   :returncode: 1
+   :returncode: 2
 
 As a protective measure, GnuCOBOL includes an in source directive that can be
 used to alleviate remembering to pass ``-free`` to ``cobc`` every time.  Due
