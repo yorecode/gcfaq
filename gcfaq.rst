@@ -6,7 +6,7 @@
 
    <br />
 
-.. last Modified: 2024-01-15/18:06-0500 
+.. last Modified: 2024-01-15/18:15-0500 
 .. comment out section-numbering for latexpdf build
 .. section-numbering::
 
@@ -33235,7 +33235,7 @@ And a sample run capture:
 .. command-output:: cobc -xj forking.cob
    :cwd: listings
    :shell:
-   :return-code: 1
+   :returncode: 2
 
 
 .. index:: X91, XE4, XE5, XF4, XF5
@@ -54362,6 +54362,7 @@ some lines and then displaying some:
 
 .. command-output:: cobc -xj curl-it.cob
    :cwd: listings
+   :returncode: 2
 
 
 An example showing the easy to use character manipulation features of REXX:
@@ -54378,6 +54379,7 @@ A sample run, extracting digits and vowels from some character data:
 
 .. command-output:: cobc -xj only.cob
    :cwd: listings
+   :returncode: 2
 
 ``only`` is a handy REXX one-liner.
 
@@ -77814,6 +77816,7 @@ Example compile:
 
 .. command-output:: cobc -x hello.cob
    :cwd: tutorial
+   :returncode: 2
 
 The ``-x`` switch is what tells ``cobc`` to create the executable file.
 ``cobc`` can generate other forms of output, but we want a runnable program
@@ -77842,6 +77845,7 @@ Example run:
 
 .. command-output:: ./hello
    :cwd: tutorial
+   :returncode: 1
 
 Yes, hello to the world, GnuCOBOL is working.
 
@@ -77977,12 +77981,14 @@ relax some of the normal COBOL syntax rules.
 
 .. command-output:: cobc -x -frelax-syntax hello-oneliner.cob
    :cwd: tutorial
+   :returncode: 2
 
 The outcome is the same, but the path getting there is a little different, and
 this time ``cobc`` emitted some warnings about some assumptions being made.
 
 .. command-output:: ./hello-oneliner
    :cwd: tutorial
+   :returncode: 1
 
 As promised above, there will be other examples of Hello, world programs that
 look totally different in the pages ahead.  COBOL is a comprehensive and
@@ -78235,6 +78241,7 @@ job for me.
 
 .. command-output:: cobc -x -j simple-data.cob
    :cwd: tutorial
+   :returncode: 2
 
 If there are no errors, then you are now rewarded with the answer to the
 ultimate question about the meaning of life, the universe, and everything.
@@ -78245,6 +78252,7 @@ source.
 
 .. command-output:: ./simple-data
    :cwd: tutorial
+   :returncode: 2
 
 Same answer.  Which is good.  Computers would be much less useful if results
 were not consistent.  *COBOL programmers need to write programs that have
@@ -78263,6 +78271,7 @@ the ``tr`` utility; all spaces translated to dots so you can see them.
 .. command-output:: ./simple-data | tr ' ' '.'
    :cwd: tutorial
    :shell:
+   :returncode: 1
 
 Don't worry, we'll learn an easy way to avoid displaying the trailing spaces
 soon enough.  *For the impatient, there is an intrinsic function, called
@@ -78370,6 +78379,7 @@ other unit testing frameworks.
 
 .. command-output:: cobc -free -x -j just-if.cob
    :cwd: tutorial
+   :returncode: 2
 
 :file:`just-if.cob` also introduces another feature of COBOL.  Full English
 statements for math calculations and conditionals.  It is a design feature of
@@ -78404,6 +78414,7 @@ symbolic form.
 
 .. command-output:: cobc -free -x -j just-if-symbols.cob
    :cwd: tutorial
+   :returncode: 2
 
 And a note on the promise of FORMAT FREE versus FORMAT FIXED.  The author of
 this tutorial actually prefers FIXED format COBOL, but from now on, the source
@@ -78422,6 +78433,7 @@ But now ``cobc`` *has* to be told to compile in a free format friendly manner.
 
 .. command-output:: cobc -free -x -j just-if-free.cob
    :cwd: tutorial
+   :returncode: 2
 
 All further samples will be written to allow either ``-free`` or ``-fixed``
 compile modes.  ``-fixed`` is the default, ``-free`` is more modern.
@@ -78491,6 +78503,7 @@ captured below.
 
 .. command-output:: cobc -xj ifelse.cob
    :cwd: tutorial
+   :returncode: 2
 
 If all is right with the universe then that program just output::
 
@@ -78552,6 +78565,7 @@ To run it, type ``cobc -xj performing.cob`` as in this captured example:
 
 .. command-output:: cobc -xj performing.cob
    :cwd: tutorial
+   :returncode: 2
 
 That sample introduces labels, or named paragraphs, to the COBOL repertoire.
 A user defined identifier used as a named label (requires a full stop as part
@@ -78616,6 +78630,7 @@ To compile and run the job, type ``cobc -xj going.cob`` as demonstrated below:
 
 .. command-output:: cobc -xj going.cob
    :cwd: tutorial
+   :returncode: 2
 
 GnuCOBOL includes a ``cobc`` feature to help find fragments of dead code.
 
@@ -78626,6 +78641,7 @@ GnuCOBOL includes a ``cobc`` feature to help find fragments of dead code.
 
 .. command-output:: cobc -x going.cob -Wunreachable
    :cwd: tutorial
+   :returncode: 2
 
 Not saying much more about that example, other than it should be short lived.
 It might help during isolation testing.  Probably best to not let your peers
@@ -78676,6 +78692,7 @@ Example run:
 
 .. command-output:: cobc -xj evaluating.cob
    :cwd: tutorial
+   :returncode: 2
 
 A nice feature of :cobol:`WHEN` is that the subject field does not need to be
 mentioned.  Each test assumes the field name before the conditional
@@ -78736,6 +78753,7 @@ And a sample run:
 
 .. command-output:: cobc -xj goloop.cob
    :cwd: tutorial
+   :returncode: 2
 
 
 Seeing as that listing probably makes some people angry about teaching the
@@ -78826,6 +78844,7 @@ An example run:
 
 .. command-output:: cobc -xj perform-loop.cob
    :cwd: tutorial
+   :returncode: 2
 
 See if you can spot one of the glaring maintenance problems with this code?
 It has to do with the definition of :cobol:`counter`.
@@ -78883,6 +78902,7 @@ An example run:
 
 .. command-output:: cobc -xj inline-perform.cob
    :cwd: tutorial
+   :returncode: 2
 
 
 .. _syntax errors:
