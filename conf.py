@@ -42,7 +42,7 @@ extensions = [
     'sphinx.ext.imgmath',
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
-#    'sphinxcontrib.programoutput',
+    'sphinxcontrib.programoutput',
 #    'sphinxcontrib.inlinesyntaxhighlight',
 ]
 

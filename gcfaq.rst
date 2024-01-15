@@ -6,7 +6,7 @@
 
    <br />
 
-.. last Modified: 2022-03-04/18:54-0500 btiffin
+.. last Modified: 2024-01-15/18:06-0500 
 .. comment out section-numbering for latexpdf build
 .. section-numbering::
 
@@ -33235,6 +33235,7 @@ And a sample run capture:
 .. command-output:: cobc -xj forking.cob
    :cwd: listings
    :shell:
+   :return-code: 1
 
 
 .. index:: X91, XE4, XE5, XF4, XF5
