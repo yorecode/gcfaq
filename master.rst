@@ -1,0 +1,8 @@
+============
+GnuCOBOL FAQ
+============
+
+.. toctree::
+
+   gcfaq
+
