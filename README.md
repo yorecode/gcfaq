@@ -19,7 +19,7 @@ Even though this docset is *documentation*, the overall license is a
 is also an amalgam over the years, and some of the listings may include
 different choice of licensing by the author's of the code, in which
 case, any license in the source listing will supersede the *overall*
-license of the work.
+license of gcfaq.rst.
 
 Have good, make well.
 
