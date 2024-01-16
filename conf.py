@@ -11,7 +11,7 @@ sys.setrecursionlimit(5000)
 
 # The master toctree document.
 #master_doc = 'gcfaq'
-master_doc = 'master'
+master_doc = 'index'
 
 # General information about the project.
 project = u'GnuCOBOL FAQ'

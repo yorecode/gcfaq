@@ -25,5 +25,6 @@ Have good, make well.
 
 ## Some links
 
-- [GnuCOBOL FAQ, HTML](https://gnucobol.sourceforge.io/faq/index.html) 
-- [GnuCOBOL FAQ, PDF](https://gnucobol.sourceforge.io/faq/GnuCOBOLFAQ.pdf) 
+- [GnuCOBOL FAQ, Readthedocs](https://gcfaq.readthedocs.io/en/latest/gcfaq.html)
+- [HTML on SourceForge](https://gnucobol.sourceforge.io/faq/index.html) 
+- [PDF on SourceForge](https://gnucobol.sourceforge.io/faq/GnuCOBOLFAQ.pdf) 
